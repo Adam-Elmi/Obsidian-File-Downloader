@@ -2,7 +2,7 @@ local color = require("colorize")
 
 local utils = {}
 
-function showPath()
+function utils.showPath()
     local file = io.open("config.txt", "r")
     if file then
         local content = file:read("*a")
@@ -17,27 +17,14 @@ function showPath()
     end
 end
 
-function target_folder()
-    local file = io.open("config.txt", "r")
-    if file then
-        local path = file:read("*a")
-        local commands = {
-            {
-                command = "target_folder -c",
-                action = "ls " .. path
-            }
-        }
-        -- command input
-        io.write("")
-        local command = io.read()
-
-        for _, v in pairs(commands) do
-           if v.command == command then
-            os.execute(v.action)
-           else 
-            print(color.colorize(("command: " .. command .. " is not found"), "red"))
-           end
+function utils.includes(table, value)
+    for _, v in pairs(table) do
+        if v.command == value then
+            return true
         end
     end
+    return false
 end
-target_folder()
+
+return utils
+

@@ -1,4 +1,4 @@
-local get_file_path = require("get-file-path")
+local get_file_path = require("get_file_path")
 local color = require("colorize")
 colorize = color.colorize
 user_input = get_file_path
