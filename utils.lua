@@ -8,7 +8,7 @@ function utils.showPath()
         local content = file:read("*a")
         file:close()
         if content ~= "" then
-            print("Current path: " .. color.colorize(content, "green"))
+            print("Current vault path: " .. color.colorize(content, "green"))
         else
             print(color.colorize("Current path is empty. Please enter your vault path!", "red"))
         end
@@ -27,4 +27,3 @@ function utils.includes(table, value)
 end
 
 return utils
-
