@@ -12,7 +12,7 @@ bash_input = function()
 
     file_input = file_input:gsub("%s+$", "")
 
-    print("You entered: " .. file_input)
+    print(colorize(("Successful added path: " .. file_input), "green"))
     return file_input
 end
 
