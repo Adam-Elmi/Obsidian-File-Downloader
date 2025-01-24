@@ -32,6 +32,7 @@ function run_cmd()
             end
         end
      end
+     file:close()
 end
 
 run_cmd()

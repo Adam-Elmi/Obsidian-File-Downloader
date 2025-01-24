@@ -15,6 +15,7 @@ function utils.showPath()
     else
         print(color.colorize("Failed to open the file!", "red"))
     end
+    file:close()
 end
 
 function utils.includes(table, value)
