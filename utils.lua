@@ -26,8 +26,4 @@ function utils.command_includes(table, value)
     return false
 end
 
-function getFileExtension(filename)
-    return filename:match("%.(%w+)$")
-end
-
 return utils
