@@ -18,6 +18,7 @@ function file_manager()
      io.write("> ")
      local command = io.read()
      print(command)
+     
      for _, v in pairs(commands) do
         if v.command == command then
          if type(v.action) == "function" then
