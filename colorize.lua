@@ -1,3 +1,5 @@
+#!/usr/bin/env lua
+
 local color = {}
 
 function color.colorize(text, color)
