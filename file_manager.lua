@@ -1,3 +1,5 @@
+#!/usr/bin/env lua
+
 local color = require("colorize")
 local utils = require("utils")
 
@@ -26,7 +28,7 @@ function file_manager()
         local result = handleRepo:read("*a")
         print(result)
         handleRepo:close()
-        
+
     end
 
     local commands = {
