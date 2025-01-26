@@ -1,3 +1,5 @@
+#!/usr/bin/env lua
+
 local get_file_path = require("get_file_path")
 local color = require("colorize")
 colorize = color.colorize
