@@ -1,3 +1,5 @@
+#!/usr/bin/env lua
+
 local color = require("colorize")
 
 local bash_input = {}
