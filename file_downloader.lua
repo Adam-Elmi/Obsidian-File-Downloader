@@ -63,7 +63,8 @@ end
 local function download()
     local is_empty, folder_location = check_file_content("location.txt")
     if not is_empty then
-        local output = bash_input("Enter the link of the repo", false)
+        io.write(colorize("Enter the link of the repo:\n", "cyan"))
+        local output = io.read()
         if output then
             os.execute("cd " .. folder_location .. "&&" .. "git clone " .. output)
             local repo_name = output:match("/([^/]+)%.git$")
@@ -113,7 +114,8 @@ help: displays this help message
             end
         }
     }
-    local input_command = bash_input("Enter a command or type help:", false)
+    io.write(colorize("Enter a command or type help:\n", "cyan"))
+    local input_command = io.read()
     if not input_command then return end
     local cmd = string.lower(input_command)
     local is_matched = false
