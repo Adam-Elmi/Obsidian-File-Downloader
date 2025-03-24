@@ -1,4 +1,5 @@
 #!/usr/bin/env lua
+
 -- Colorize Function
 local function colorize(text, color)
     local colors = {
@@ -11,6 +12,8 @@ local function colorize(text, color)
         cyan = "\27[36m",
         white = "\27[37m",
     }
+
+    text = text or ""
 
     return (colors[color] or colors.reset) .. text .. colors.reset
 end
