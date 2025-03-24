@@ -43,6 +43,11 @@ Or, if you added it to your PATH and made it executable:
 ```bash
 file_downloader.lua
 ```
+## Commands
+The commands:
+- show: shows the current location
+- change: changes the folder location
+- help: displays this help message
 
 ## Troubleshooting
 - **Script Not Found:** Make sure the script is in the right folder and added to your PATH.
