@@ -1,3 +1,4 @@
+#!/usr/bin/env lua
 -- Colorize Function
 local function colorize(text, color)
     local colors = {
