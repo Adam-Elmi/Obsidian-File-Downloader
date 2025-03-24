@@ -33,8 +33,8 @@ local function bash_input(message, enable_print_message)
         print(colorize("Enter folder location: ", "cyan"))
     end
 
-    os.execute("chmod +x ./interactive.sh")
-    local handle = io.popen("./interactive.sh")
+    os.execute("chmod +x interactive.sh")
+    local handle = io.popen("interactive.sh")
     if handle then
         local file_input = handle:read("*a")
         handle:close()
