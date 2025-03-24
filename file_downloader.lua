@@ -33,17 +33,16 @@ local function bash_input(message, enable_print_message)
         print(colorize("Enter folder location: ", "cyan"))
     end
 
-    os.execute("chmod +x interactive.sh")
-    local handle = io.popen("interactive.sh")
+    local handle = io.popen('bash -c \'read -e -p "> " path && echo "$path"\'')
     if handle then
         local file_input = handle:read("*a")
-        handle:close()
         file_input = file_input:gsub("%s+$", "")
+        add_location("location.txt", file_input)
         if enable_print_message then
-            add_location("location.txt", file_input)
             print(colorize("Successfully!", "green"))
             print(colorize("New folder location: ", "cyan") .. colorize(file_input, "yellow"))
         end
+        handle:close()
         return file_input
     end
 end
@@ -89,7 +88,7 @@ local function execute()
         },
         change = {
             action = function()
-                return bash_input(true)
+                return bash_input(nil, true)
             end
         },
         download = {
