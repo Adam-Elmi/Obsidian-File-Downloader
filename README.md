@@ -29,7 +29,7 @@ export PATH="$HOME/Obsidian-File-Downloader:$PATH"
 
 Reload the shell configuration:
 ```bash
-source ~/.bashrc  # or source ~/.zshrc, etc.
+source ~/.bashrc  # or source ~/.zshrc.
 ```
 
 ## Usage
@@ -43,26 +43,54 @@ Or, if you added it to your PATH and made it executable:
 ```bash
 file_downloader.lua
 ```
-## Commands
-The commands:
-- show: shows the current location
-- change: changes the folder location
-- help: displays this help message
 
-## Troubleshooting
-- **Script Not Found:** Make sure the script is in the right folder and added to your PATH.
-- **Permission Denied:** Run this to make the script executable:
+### Commands
+
+Run the script and enter a command when prompted:
 ```bash
-chmod +x file_downloader.lua
+file_downloader.lua
+Enter a command or type help:
 ```
-- **Lua Not Installed:** Install Lua with:
+
+- **show:**
 ```bash
-sudo apt install lua5.4  # For Debian/Ubuntu
-brew install lua         # For macOS
+Enter a command or type help:
+show
+Current folder location: /path/to/your/folder
+```
+
+- **change:**
+```bash
+Enter a command or type help:
+change
+> /new/path/to/folder
+Successfully!
+New folder location: /new/path/to/folder
+```
+
+- **download:**
+```bash
+Enter a command or type help:
+download
+Enter the link of the repo:
+https://github.com/username/repo.git
+```
+
+- **help:**
+```bash
+Enter a command or type help:
+help
+=====================
+usage:
+command
+
+The commands:
+show: shows the current location
+change: changes the folder location
+download: downloads markdown files
+help: displays this help message
+=====================
 ```
 
 ## License
 MIT License
-
-## Author
-[Adam Elmi](https://github.com/Adam-Elmi)
