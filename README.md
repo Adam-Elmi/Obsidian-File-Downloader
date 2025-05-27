@@ -2,6 +2,13 @@
 
 A simple Lua script to download markdown files for Obsidian.
 
+## Installation Video
+
+Watch the installation video:
+
+[![Installation Video](https://img.shields.io/badge/Watch%20Installation%20Video-blue?logo=video)](./assets/Installation.webm)
+
+
 ## Installation
 
 > **Note:**  
