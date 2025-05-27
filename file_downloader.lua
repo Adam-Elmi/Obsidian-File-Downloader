@@ -105,9 +105,10 @@ usage:
 command
 
 The commands:
+help: displays this help message
 show: shows the current location
 change: changes the folder location
-help: displays this help message
+download: clones a git repository, extracts all markdown (.md) files to the selected folder, and removes all other files
 =====================
 ]]
                 print(guide)
