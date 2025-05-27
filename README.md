@@ -24,7 +24,13 @@ chmod +x file_downloader.lua
 Edit your shell configuration file:
 
 - Bash: `nano ~/.bashrc`
+```bash
+nano ~/.bashrc
+```
 - Zsh: `nano ~/.zshrc`
+```bash
+nano ~/.zshrc
+```
 
 Add the following line at the end of your shell configuration file, replacing `/path/to` with the actual path where you cloned "Obsidian-File-Downloader":
 ```bash
@@ -37,7 +43,11 @@ export PATH="$HOME/Tools/Obsidian-File-Downloader:$PATH"
 
 Reload the shell configuration:
 ```bash
-source ~/.bashrc  # or source ~/.zshrc.
+# For Bash:
+source ~/.bashrc
+
+# For Zsh:
+source ~/.zshrc
 ```
 
 ## Usage
