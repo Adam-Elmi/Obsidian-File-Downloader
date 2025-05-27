@@ -81,7 +81,7 @@ Run the script and enter a command when prompted:
 
 - **Command-Line:**
 
-![Command Screenshot](./assets/cmd.png)
+![Command Screenshot](./assets/starter.png)
 
 - **help:**
 
