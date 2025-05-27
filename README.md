@@ -64,12 +64,12 @@ source ~/.zshrc
 ## Usage
 
 You can run the script directly with Lua:
-```bash
+```lua
 lua file_downloader.lua
 ```
 
 Or, if you added it to your PATH and made it executable:
-```bash
+```lua
 file_downloader.lua
 ```
 
