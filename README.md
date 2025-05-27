@@ -73,53 +73,30 @@ Or, if you added it to your PATH and made it executable:
 file_downloader.lua
 ```
 
+
+
 ### Commands
 
 Run the script and enter a command when prompted:
-```bash
-file_downloader.lua
-Enter a command or type help:
-```
 
-- **show:**
-```bash
-Enter a command or type help:
-show
-Current folder location: /path/to/your/folder
-```
-
-- **change:**
-```bash
-Enter a command or type help:
-change
-> /new/path/to/folder
-Successfully!
-New folder location: /new/path/to/folder
-```
-
-- **download:**
-```bash
-Enter a command or type help:
-download
-Enter the link of the repo:
-https://github.com/username/repo.git
-```
+- **Command-Line:**
+![Command-lINE Command Screenshot](./assets/cmd.png)
 
 - **help:**
-```bash
-Enter a command or type help:
-help
-=====================
-usage:
-command
+![Help Command Screenshot](./assets/help.cmd.png)
 
-The commands:
-show: shows the current location
-change: changes the folder location
-download: downloads markdown files
-help: displays this help message
-=====================
-```
+- **show:**
+![Show Command Screenshot](./assets/show.cmd.png)
+
+- **change:**
+![Change Command Screenshot](./assets/change.cmd.png)
+
+- **download:**
+![Download Command Screenshot](./assets/download.cmd.png)
+
+- **Output:**
+![Output Command Screenshot](./assets/output.png)
+
 
 ## License
 MIT License
