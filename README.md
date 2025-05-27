@@ -45,7 +45,9 @@ Reload the shell configuration:
 ```bash
 # For Bash:
 source ~/.bashrc
+```
 
+```bash
 # For Zsh:
 source ~/.zshrc
 ```
