@@ -80,21 +80,27 @@ file_downloader.lua
 Run the script and enter a command when prompted:
 
 - **Command-Line:**
-![Command-lINE Command Screenshot](./assets/cmd.png)
+
+![Command Screenshot](./assets/cmd.png)
 
 - **help:**
+
 ![Help Command Screenshot](./assets/help.cmd.png)
 
 - **show:**
+
 ![Show Command Screenshot](./assets/show.cmd.png)
 
 - **change:**
+
 ![Change Command Screenshot](./assets/change.cmd.png)
 
 - **download:**
+
 ![Download Command Screenshot](./assets/download.cmd.png)
 
 - **Output:**
+
 ![Output Command Screenshot](./assets/output.png)
 
 
