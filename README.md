@@ -4,6 +4,10 @@ A simple Lua script to download markdown files for Obsidian.
 
 ## Installation
 
+> **Note:**  
+> Before you start, make sure you have the Lua interpreter installed on your computer.  
+> You can download it from [https://www.lua.org/download.html](https://www.lua.org/download.html).
+
 1. **Clone the Repository:**
 ```bash
 git clone https://github.com/Adam-Elmi/Obsidian-File-Downloader.git
@@ -22,9 +26,13 @@ Edit your shell configuration file:
 - Bash: `nano ~/.bashrc`
 - Zsh: `nano ~/.zshrc`
 
-Add this line at the end:
+Add the following line at the end of your shell configuration file, replacing `/path/to` with the actual path where you cloned "Obsidian-File-Downloader":
 ```bash
-export PATH="$HOME/Obsidian-File-Downloader:$PATH"
+export PATH="$HOME/path/to/Obsidian-File-Downloader:$PATH"
+```
+For example, if you cloned it to `/home/yourusername/Tools`, the line would be:
+```bash
+export PATH="$HOME/Tools/Obsidian-File-Downloader:$PATH"
 ```
 
 Reload the shell configuration:
