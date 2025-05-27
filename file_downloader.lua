@@ -133,12 +133,11 @@ help: displays this help message
     end
 end
 
-local is_empty, file_content = check_file_content("location.txt")
+local is_empty = check_file_content("location.txt")
 
 if is_empty then
     print(colorize("Folder location is empty.", "red"))
     bash_input()
 else
-    print(colorize("Current folder location: ", "cyan") .. colorize(file_content, "yellow"))
     execute()
 end
