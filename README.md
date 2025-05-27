@@ -77,9 +77,7 @@ file_downloader.lua
 
 ### Commands
 
-Run the script and enter a command when prompted:
-
-- **Command-Line:**
+Run the script:
 
 ![Command Screenshot](./assets/starter.png)
 
