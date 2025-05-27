@@ -21,16 +21,14 @@ chmod +x file_downloader.lua
 ```
 
 3. **Add the Folder to Your PATH:**
-Edit your shell configuration file:
+You can use any text editor to edit your shell configuration file:
 
 - Bash:
-
 ```bash
 nano ~/.bashrc
 ```
 
 - Zsh:
-
 ```bash
 nano ~/.zshrc
 ```
@@ -46,13 +44,13 @@ export PATH="$HOME/Tools/Obsidian-File-Downloader:$PATH"
 
 Reload the shell configuration:
 
+- For Bash:
 ```bash
-# For Bash:
 source ~/.bashrc
 ```
 
+- For Zsh:
 ```bash
-# For Zsh:
 source ~/.zshrc
 ```
 
